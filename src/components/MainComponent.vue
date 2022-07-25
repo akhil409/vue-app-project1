@@ -1,9 +1,8 @@
 <template>
   <v-app class="main">
     <v-main>
-      <LoginForm />
-      <!-- <NavbarComponent /> -->
-       <!-- <v-container> -->
+      <NavbarComponent />
+       <v-container>
         
         <!-- <div class="app text-center">
             <router-link to="/">Vuetify Vuelidate Register Form</router-link>
@@ -11,7 +10,7 @@
             <router-link to="/form" >VForm</router-link>
         </div> -->
 
-       <!-- <router-view></router-view>
+       
 
        </v-container>
        <v-bottom-navigation class="navbt" color="teal" white grow>
@@ -27,23 +26,21 @@
           <span class="black--text">Nearby</span>
           <v-icon class="black--text">mdi-map-marker</v-icon>
         </v-btn>
-       </v-bottom-navigation> -->
+       </v-bottom-navigation>
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import NavbarComponent from './components/NavbarComponent.vue';
-import LoginForm from './components/LoginForm.vue';
+import NavbarComponent from '../components/NavbarComponent.vue';
 // import VVFormValidate from './components/VVFormValidate.vue';
 // import FormValidations from './components/FormValidations.vue';
 
 export default {
-  name: 'App',
+  name: 'MainComponent',
 
   components: {
-    // NavbarComponent,
-    LoginForm,
+    NavbarComponent
 },
 
   data: () => ({
@@ -56,7 +53,7 @@ export default {
   .main{
       background-color:whitesmoke;
    }
-/* 
+
    .app{
     display: flex;
     justify-content: space-between;
@@ -65,6 +62,6 @@ export default {
 
    .navbt{
     background-color: aliceblue;
-   } */
+   }
 
 </style>
